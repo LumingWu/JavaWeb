@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>developerWorks registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </head>
+    <body>
+        <div id="masthead-top-row">
+            <a href="https://www.google.com" id="top-left">IBM</a>
+            <a href="https://www.google.com" id="top-right"><img src="dwn-dw-badge.png" width="43" height="22" alt="dW" aria-label="dW"></a>
+        </div>
+        <div id="masthead-mid-row" aria-label="Site map">
+            <a href="https://www.google.com"><img src="dwn-dw-wordmark.png" width="225" height="28" alt="developerWorks®" id="mid-left"></a>
+        </div>
+        <div id="leadspace">
+            <div id="leadspace-body" class="horizontal-center">
+                <h1 id="leadspace-text">developerWorks registration</h1>
+            </div>
+        </div>
+        <div style="width:980px;" class="horizontal-center">
+            <form action="RegisterServlet" method="get">
+                <p>Thank you for registering with IBM developerWorks. To simplify things, you can use the IBM ID and password that you designate below across IBM.
+                </p>
+                <p>Asterisks (<span class="required">*</span>) indicate fields required to complete this transaction.
+                </p>
+                <h2>Basic registration information</h2>
+                <div class="padding-v-6"></div>
+                <div class="inline-block" style="width:268px;padding-right:10px;">
+                    <label>First name:<span class ="required">*</span></label>
+                    <input type ="text" id="firstname" name="firstname" class="width-243">
+                </div>
+                <div class="inline-block" style="padding-left:11px;">
+                    <label>Last name:<span class ="required">*</span></label>
+                    <input type ="text" id="lastname" name="lastname" style="width:253px;">
+                </div>
+                <span class="red red2" id="nameresponse"></span>
+                <br><br>
+                <label>Email address:<span class ="required">*</span></label>
+                <span><sup>(This will also be your IBM ID for signing in)</sup></span><br>
+                <input type ="text" id="email" name="email" class="width-289">
+                <span class="red" id="emailresponse"></span>
+                <br><br>
+                <label>Password:<span class ="required">*</span></label>
+                <span><sup>(Must be at least 8 characters)</sup></span><br>
+                <input type ="password" id="password" name="password" class="width-289">
+                <span class="red" id="passswordresponse"></span>
+                <br><br>
+                <label>Verify Password:<span class ="required">*</span></label>
+                <input type ="password" id="verifypassword" name="verifypassword" class="width-289">
+                <span class="red" id="verifypasswordresponse"></span>
+                <br><br>
+                <label>Display name:<span class ="required">*</span></label>
+                <span><sup>(Must be between 3 - 31 characters. <a href="https://www.google.com">Tips for choosing display name</a>.)</sup></span><br>
+                <input type ="text" id="displayname" name="displayname" class="width-289">
+                <span class="red" id="displaynameresponse"></span>
+                <br><br>
+                <label>Country/region of residence:<span class ="required"></span></label>
+                <span><sup>(Required for warranty)</sup></span><br>
+                <select name="country"  id="country" style="width:306px;">
+                    <option value="">Select one</option>
+                    <option value="US">United States</option>
+                    <option value="CN">China</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="FR">France</option>
+                    <option value="IN">India</option>
+                </select>
+                <span class="red" id="countryresponse"></span>
+                <br><br>
+                <div class="inline-block">
+                    <label>City:</label>
+                    <input type ="text" id="city" name="city" class="width-243">
+                </div>
+                <div class="inline-block" style="margin-left:29px;">
+                    <label>Language:<span class ="required">*</span></label>
+                    <select id="language" name="language" style="width:161px;">
+                        <option value="">Select one</option>
+                        <option value="US" selected="selected">English(US)</option>
+                        <option value="UK">English(UK)</option>
+                        <option value="CN">Chinese</option>
+                        <option value="FR">French</option>
+                        <option value="IN">Indian</option>
+                    </select>
+                </div>
+                <span class="red red2" id="languageresponse"></span>
+                <p class="f-1">Please select a security question that only you can answer or create your own. Then enter the answer to the question. Occasionally, you may be asked to answer this question to confirm your identity.
+                </p>
+                <label>Security question:<span class ="required">*</span></label>
+                <select id="securityquestion" name="securityquestion" style="width:267px;">
+                    <option value="">Select one</option>
+                    <option value="q1">What is your mother's maiden name?</option>
+                    <option value="q2">What is the name of your first pet?</option>
+                    <option value="q3">What was the name of your first school?</option>
+                    <option value="q4">In what city or town was your first job?</option>
+                    <option value="q5">In what country were you born?</option>
+                </select>
+                <span class="red" id="securityquestionresponse"></span>
+                <br><br>
+                <label>Answer to security question:<span class ="required">*</span></label>
+                <input type ="text" id="securityanswer" name="securityanswer" class="width-289">
+                <span class="red" id="securityanswerresponse"></span>
+                <br><br>
+                <h2 style="padding-top:6px;border-top:2px solid #CCC;margin-bottom:5px;">Privacy preferences</h2>
+                <p class="f-1">Please keep me informed of products, services and offerings from IBM companies worldwide.</p>
+                <input type='checkbox' name="contact1"><span class="f-1">by email.</span><br>
+                <input type='checkbox' name="contact2"><span class="f-1">by telephone or postal mail.</span>
+                <br><br>
+                <span class='f-1'>I accept <a href="http://www.google.com" style="text-decoration: underline;">IBM's Privacy statement</a>.</span>
+                <br><br>
+                <span class='f-1'>All fields are required to complete this transaction.</span><br>
+                <hr>
+                <span class='f-1'>By selecting the <b>Register</b> link, I agree to the developerWorks <a href="http://www.google.com">terms of use</a>.</span>
+                <br><br>
+                <button type="submit">
+                Register
+                </button>
+                <button type="button" onclick="location.href='https://www.google.com'">
+                Cancel
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

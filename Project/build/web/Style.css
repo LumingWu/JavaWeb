@@ -1,0 +1,186 @@
+form {
+    width: 620px;/*620px*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+}
+
+.required {
+    font-size: 1.4em;
+    line-height: 10px;
+    color: red;
+}
+
+.red {
+    font-size: 12px;
+    padding-top: 7px;
+    color: red;
+    position: fixed;
+}
+
+.red2 {
+    padding-top: 37px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.horizontal-center {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+/* IBM */
+#masthead-top-row {
+    background-color: #151724;
+    overflow: hidden;
+    height: 22px; /* 22 */
+}
+
+#top-left {
+    margin-left: 20px;
+    float: left;
+    font-size:0.8em;
+    color:#EEE;
+    margin-top:3px;
+    text-decoration:none;
+    height:22px;
+}
+
+#top-right {
+    float:right;
+}
+
+#masthead-mid-row {
+    background: -webkit-gradient(linear, left top, left bottom, from(#595C64), to(#1B1B1C));
+    height:52px;
+}
+
+#mid-left {
+    padding-top: 11px;
+    padding-left: 20px;
+}
+
+#leadspace {
+    background-position: 50% 100%;
+    clear: both;
+    height: 114px;
+    min-height: 70px;
+    background: rgb(238, 238, 238) url("https://1.www.s81c.com/i/v17/lead/leadspace-tall-bg.png") repeat scroll 50% 100% / auto padding-box border-box;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    font: normal normal normal normal 16px / 19.2px Arial, sans-serif;
+    
+}
+
+#leadspace-body {
+    height: 75px;
+    min-height: 71px;
+    position: relative;
+    width: 980px;
+    font: normal normal normal normal 16px / 19.2px Arial, sans-serif;
+    padding: 0px 0px 39px;
+}
+
+#leadspace-text {
+    clear: both;
+    height: 30px;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    width: 740px;
+    font: normal normal bold normal 30px / 30px HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial;
+    margin: 0px;
+    padding: 25px 20px 20px;
+}
+
+li {
+    display:inline;
+}
+
+div, p, span, a, li, strong {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin:0px;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    font-size:0.9328em;
+    line-height: 1.5em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #333;
+}
+
+span {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    vertical-align: baseline;
+}
+
+h2 {
+    font-size: 1.04em;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    margin: 5px 0;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    display: block;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size:12.8px;
+}
+
+input{
+    padding: 4px;
+    border: 1px solid #BABABA;
+    font-style:normal;
+}
+
+.padding-v-6{
+    height:6px;
+}
+
+.padding-h-10{
+    width:10px;
+}
+
+sup {
+    font-size: 11px;
+    color: gray;
+    font-family: Georgia;
+    font-weight:normal;
+}
+
+.width-243{
+    width: 243px;
+    height: 14px;
+}
+
+.width-289{
+    width: 279px;
+}
+
+.f-1 {
+    font-size:0.8em;
+    font-family: Arial, sans-serif;
+    color:#333;
+}
+
+a {
+    color: #00649d;
+    text-decoration:none;
+}
+
+select {
+    height:23px;
+    color:#838383;
+}
